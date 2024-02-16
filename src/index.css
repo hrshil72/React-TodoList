@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #8758ff;
+  background: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +19,28 @@ body {
 }
 
 h1 {
-  color: #fff;
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
+  text-align: center;
+  color: rgb(0, 255, 200);
+  font-size: 1.2em;
 }
 
 .TodoWrapper {
-  background: #1a1a40;
   margin-top: 5rem;
   padding: 2rem;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 20px;
+}
+
+.TodoWrapper:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
 
 .TodoForm {
@@ -37,26 +49,44 @@ h1 {
 }
 
 .todo-input {
-  outline: none;
-  background: none;
-  border: 1px solid #8758ff;
-  padding: 0.5rem 1rem;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 300px;
-  color: #fff;
+  border: none;
+  outline: none;
+  color: rgb(0, 255, 200);
+  background: none;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
 .todo-input::placeholder {
-  color: #ffffff4d;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
 }
 
 .todo-btn {
-  background: #8758ff;
-  color: #fff;
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  margin-left: 1em;
   border: none;
-  padding: 0.55rem;
-  cursor: pointer;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: rgb(0, 0, 0);
+}
+
+.todo-btn:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: rgb(0, 255, 200);
 }
 
 .Todo {
